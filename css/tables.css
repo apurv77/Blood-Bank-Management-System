@@ -1,0 +1,149 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+body {
+    padding-top: 50px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #f44336;
+}
+
+h3 {
+    margin-left: 5%;
+    margin-top: 22px;
+    font-family: 'Quicksand', sans-serif;
+    color: #f44336;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.bar1 {
+    height: 1px;
+    background-color: #f44336;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    margin-top: -50px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1),
+    0px 10px 10px rgba(0, 0, 0, 0.1),
+    0px 10px 10px rgba(0, 0, 0, 0.1),
+    0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 40px;
+
+}
+
+tr {
+    height: 100px;
+}
+
+th {
+    background-color: #f44336;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+tr:nth-child(odd) {
+    background-color: #eeeeee;
+    text-align: center;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+}
+
+tr:hover {
+    background-color: white;
+}
+
+#quitBtn {
+    display: inline-block;
+    color: #f44336;
+    border: none;
+    height: 50px;
+    background-color: transparent;
+}
+
+#testc {
+    margin-top: 4px;
+    background-color: transparent;
+    border: 0px;
+    font-size: 22px;
+}
+
+#oueshub {
+    margin-top: 4px;
+    background-color: transparent;
+    border: 0px;
+    font-size: 22px;
+}
+
+#oues {
+    margin-top: 4px;
+    background-color: transparent;
+    border: 0px;
+    font-size: 22px;
+}
+
+#quitbutton {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    color: gray;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 3px;
+    font-size: 22px;
+}
+
+#quitbutton .span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#quitbutton .span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#quitbutton:hover {
+    color: white;
+}
+
+#quitbutton:hover .span {
+    padding-right: 25px;
+    color: white;
+}
+
+#quitbutton:hover .span:after {
+    opacity: 1;
+    right: 0;
+}

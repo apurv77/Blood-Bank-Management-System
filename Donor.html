@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Donor Registration</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/form-elements.css">
+    <link rel="stylesheet" href="css/wizard.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 0px;
+        }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+                    <img src="images/logo_name.png" class="img-responsive" alt="LifeShare logo" />
+                </div>
+                <div class="col-lg-10 col-md-4 col-sm-12 col-xs-12">
+                    <div class="navigation">
+                        <div id="navigation">
+                            <ul>
+                                <li class="active"><a href="index.html" title="Home">Home</a></li>
+                                <li class=""><a href="about_us.html" title="About">About</a></li>
+                                <li><a href="contact_page.php" title="Contact Us">Contact us</a> </li>
+                                <li class="has-sub"><a href="" title="Register ">Register</a>
+                                    <ul>
+                                        <li><a href="donor.html" title="Donor">As Donor</a></li>
+                                        <li><a href="Hospital.html" title="Hospital">As Hospital</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="patient_request.html" title="Log In">Blood Request</a>
+                                </li>
+                                <li><a href="donor_search.html" title="Log In">Search Donor</a>
+                                </li>
+                                <li><a href="login.html" title="Log In">Log in</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top content -->
+    <div class="top-content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 form-box">
+                    <form role="form" action="register_donor.php" method="post" class="f1" style="box-shadow: 0px 5px 20px #888888;">
+                        <div class="f1-steps">
+                            <div class="f1-progress">
+                                <div class="f1-progress-line" data-now-value="25" data-number-of-steps="2" style="width: 25%;"></div>
+                            </div>
+                            <div class="f1-step active">
+                                <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                                <p>About</p>
+                            </div>
+                            <div class="f1-step">
+                                <div class="f1-step-icon"><i class="fa fa-key"></i></div>
+                                <p>Account</p>
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-name">Name</label>
+                                    <input type="text" name="name" placeholder="Name" class="form-control" id="f1-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-aadhar">Aadhar No.</label>
+                                    <input type="number" name="aadhar_no" placeholder="Aadhar no." class="form-control" id="f1-aadhar">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-dob">Date of Birth</label>
+                                    <input type="date" name="dob" placeholder="Date of Birth" class="form-control" id="f1-dob">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-gender">Gender</label>
+                                    <select name="gender" class="form-control" id="f1-gender">
+                                        <option disabled selected hidden>Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-bl_grp">Blood Group</label>
+                                    <select name="bl_grp" class="form-control" id="f1-bl_grp">
+                                        <option disabled selected hidden>Blood Group</option>
+                                        <option>A+</option>
+                                        <option>A-</option>
+                                        <option>B+</option>
+                                        <option>B-</option>
+                                        <option>O+</option>
+                                        <option>O-</option>
+                                        <option>AB+</option>
+                                        <option>AB-</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-email">Email</label>
+                                    <input type="email" name="email" placeholder="Email" class="form-control" id="f1-email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-mobile">Mobile No.</label>
+                                    <input type="number" name="mobile" placeholder="Mobile No." class="form-control" id="f1-mobile">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-area">Area</label>
+                                    <input type="text" name="area" placeholder="Area" class="form-control" id="f1-area">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-street">Street</label>
+                                    <input type="text" name="street" placeholder="Street" class="form-control" id="f1-street">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-zip">Pincode</label>
+                                    <input type="number" name="zip" placeholder="Pincode" class="form-control" id="f1-zip">
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="f1-buttons">
+                                    <button type="button" class="btn btn-next">Next</button>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <h4>Set up your account:</h4>
+                            <div class="form-group">
+                                <label class="sr-only" for="f1-username">Username</label>
+                                <input type="text" name="username" placeholder="Username" class="form-control" id="f1-username">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="f1-password">Password</label>
+                                <input type="password" name="pswd" placeholder="Password" class="f1-password form-control" id="f1-password">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="f1-repeat-password">Repeat password</label>
+                                <input type="password" name="pswd" placeholder="Repeat password" class="f1-repeat-password form-control" id="f1-repeat-password">
+                            </div>
+                            <div class="f1-buttons">
+                                <button type="button" class="btn btn-previous">Previous</button>
+                                <input type="submit" name="submit1" class="btn btn-submit" style="min-width: 105px;
+                                height: 40px;
+                                background-color: #fe0000;
+                                margin: 0;
+                                padding: 0 20px;
+                                vertical-align: middle;
+                                border: 0;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 16px;
+                                font-weight: 300;
+                                line-height: 40px;
+                                color: #fff;
+                                border-radius: 4px;
+                                text-shadow: none;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                                -webkit-transition: all .3s;
+                                transition: all .3s;">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wizard.js"></script>
+
+    <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+</body>
+
+</html>

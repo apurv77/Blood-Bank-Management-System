@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stock Updation</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/form-elements.css">
+    <link rel="stylesheet" href="css/wizard.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 0px;
+            /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+                    <img src="images/logo_name.png" class="img-responsive" alt="LifeShare logo" />
+                </div>
+                <div class="col-lg-10 col-md-4 col-sm-12 col-xs-12">
+                    <div class="navigation">
+                        <div id="navigation">
+                            <ul>
+                                <li class="has-sub"><a href="" title="Register ">Dashboard</a>
+                                    <ul>
+                                        <li><a href="admin_donor.php" title="Donor">Donor</a></li>
+                                        <li><a href="admin_hospital.php" title="Hospital">Hospital</a></li>
+                                        <li><a href="admin_branch.php" title="Stock">Branch</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="logout.php" title="Log Out">Log Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center" style="border-style: solid; padding-bottom: 20px;">
+                <form name="request_blood" action="update_stock.php" method="POST">
+                    <div class="col-lg-12">
+                        <label style="color: rgb(0,100,200);">Branch Name</label><br>
+                        <select name="branch_name" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;">
+                        <option>Kothrud</option>
+                        <option>Katraj</option>
+                        <option>Karve Nagar</option>
+                        <option>Kalyani Nagar</option>
+                        <option>Kalewadi</option>
+                        <option>Koregaon Park</option>
+                        <option>Kundan Nagar</option>
+                        <option>Khed</option>
+                    </select><br><br>
+                        <div class="col-lg-4">
+                            <label style="color: rgb(0,100,200);">Blood Group</label><br><br><br>
+                            <label style="color: rgb(0,100,200);">A+</label><br><br><br>
+                            <label style="color: rgb(0,100,200);">A-</label><br><br><br>
+                            <label style="color: rgb(0,100,200);">B+</label><br><br>
+                            <label style="color: rgb(0,100,200);">B-</label><br><br><br>
+                            <label style="color: rgb(0,100,200);">O+</label><br><br>
+                            <label style="color: rgb(0,100,200);">O-</label><br><br>
+                            <label style="color: rgb(0,100,200);">AB+</label><br><br><br>
+                            <label style="color: rgb(0,100,200);">AB-</label><br><br>
+                        </div>
+                        <div class="col-lg-2">
+                            <label style="color: rgb(0,100,200);">Platelets </label><br><br><br>
+                            <input type="number" name="ap_plate" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="an_plate" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="bp_plate" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="bn_plate" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="op_plate" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="on_plate" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="abp_plate" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="abn_plate" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                        </div>
+                        <div class="col-lg-2">
+                            <label style="color: rgb(0,100,200);">RBCs</label><br><br><br>
+                            <input type="number" name="ap_rbc" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="an_rbc" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="bp_rbc" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="bn_rbc" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="op_rbc" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="on_rbc" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="abp_rbc" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="abn_rbc" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                        </div>
+                        <div class="col-lg-2">
+                            <label style="color: rgb(0,100,200);">Plasma</label><br><br><br>
+                            <input type="number" name="ap_plasma" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="an_plasma" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="bp_plasma" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="bn_plasma" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="op_plasma" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="on_plasma" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="abp_plasma" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="abn_plasma" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                        </div>
+                        <div class="col-lg-2">
+                            <label style="color: rgb(0,100,200);">WholeBlood</label><br><br><br>
+                            <input type="number" name="ap_whole" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="an_whole" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="bp_whole" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="bn_whole" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="op_whole" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="on_whole" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="abp_whole" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                            <input type="number" name="abn_whole" value="0" style="width: 70%;height: 35px;border-top: none;border-left: none;border-right:none; text-align: center;color: rgb(0,0,0);font-style: bold;border-bottom-color: black;"><br><br>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="submit" value="Update" name="submit" style="width: 50%;height: 40px;">
+                        </div>
+                </form>
+
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery Version 1.11.1 -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

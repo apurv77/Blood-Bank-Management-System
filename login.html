@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Log in</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/form-elements.css">
+    <link rel="stylesheet" href="css/wizard.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+                    <img src="images/logo_name.png" class="img-responsive" alt="LifeShare logo" />
+                </div>
+                <div class="col-lg-10 col-md-4 col-sm-12 col-xs-12">
+                    <div class="navigation">
+                        <div id="navigation">
+                            <ul>
+                                <li class="active"><a href="index.html" title="Home">Home</a></li>
+                                <li class=""><a href="about_us.html" title="About">About</a></li>
+                                <li><a href="contact_page.php" title="Contact Us">Contact us</a> </li>
+                                <li class="has-sub"><a href="" title="Register ">Register</a>
+                                    <ul>
+                                        <li><a href="donor.html" title="Donor">As Donor</a></li>
+                                        <li><a href="Hospital.html" title="Hospital">As Hospital</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="patient_request.html" title="Log In">Blood Request</a>
+                                </li>
+                                <li><a href="donor_search.html" title="Log In">Search Donor</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="top-content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 form-box">
+                    <form role="form" action="login.php" method="post" class="f1" style="box-shadow: 0px 5px 20px #888888;">
+                        <div class="f1-steps">
+                            <!--<div class="f1-progress">
+                                <div class="f1-progress-line" data-now-value="25" data-number-of-steps="2" style="width: 25%;"></div>
+                            </div>-->
+                            <div class="f1-step active" style="width: 100% !important;">
+                                <div class="f1-step-icon"><i class="fa fa-user-circle-o"></i></div>
+                                <p>Log In</p>
+                            </div>
+                        </div>
+
+                        <fieldset style="display: block;">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-name">Username</label>
+                                    <input type="text" name="username" placeholder="Username" class="form-control" id="f1-username">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-password">Password</label>
+                                    <input type="password" name="password" placeholder="Password" class="form-control" id="f1-password">
+                                </div>
+                                <div class="f1-buttons">
+                                    <input type="submit" name="submit1" value="Log In" class="btn btn-submit">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wizard.js"></script>
+
+    <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+</body>
+
+</html>
